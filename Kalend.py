@@ -1,14 +1,11 @@
-import time
 import datetime
 import sys
 
-while True:
+print("Вітаю! Поточний час:")
+print(datetime.datetime.now().strftime("%H:%M:%S"))
 
-  current_time = datetime.datetime.now().strftime("%H:%M:%S")
+while False:
+  pass
   
-  print(f'Зараз {current_time}')
-
-  time.sleep(1)
-
-  if datetime.datetime.now().minute == 0:
-    sys.exit()
+input("Натисніть Enter для виходу")  
+sys.exit()
