@@ -1,7 +1,5 @@
-import datetime
+import time
 
-def get_current_time():
-  print("Вітаю! Поточний час:") 
-  print(datetime.datetime.now().strftime("%H:%M:%S"))
+curr_time = time.strftime("%H:%M:%S", time.localtime())
 
-get_current_time()
+print("Поточний час:", curr_time)
