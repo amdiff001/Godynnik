@@ -6,6 +6,5 @@ print(datetime.datetime.now().strftime("%H:%M:%S"))
 
 while False:
   pass
-  
-input("Натисніть Enter для виходу")  
+
 sys.exit()
