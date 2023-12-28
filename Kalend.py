@@ -1,7 +1,6 @@
 import datetime
 
-print('Вітаю! '
-      'Поточний час:')
+print('Вітаю! Поточний час:')
 
 while True:
     current_time = datetime.datetime.now().strftime("%H:%M:%S")
