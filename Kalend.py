@@ -1,14 +1,9 @@
-import datetime
-
-print('Вітаю! Поточний час:')
+import time
+import sys
 
 while True:
-    current_time = datetime.datetime.now().strftime("%H:%M:%S")
-    print(f'Зараз {current_time}')
-
-    user_input = input("Щоб вийти, введіть 'вихід': ")
-    if user_input.lower() == 'вихід':
-        break
-
-print('До побачення!')
-
+  print(f'Зараз {current_time}')
+  
+  time.sleep(1)
+  
+sys.exit()
