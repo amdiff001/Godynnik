@@ -1,10 +1,7 @@
 import datetime
-import sys
 
-print("Вітаю! Поточний час:")
-print(datetime.datetime.now().strftime("%H:%M:%S"))
+def get_current_time():
+  print("Вітаю! Поточний час:") 
+  print(datetime.datetime.now().strftime("%H:%M:%S"))
 
-while False:
-  pass
-
-sys.exit()
+get_current_time()
