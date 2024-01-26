@@ -1,5 +1,9 @@
+from flask import Flask 
 import time
 
-curr_time = time.strftime("%H:%M:%S", time.localtime())
+app = Flask(__name__)
 
-print("Поточний час:", curr_time)
+@app.route('/')
+def index():
+    curr_time = time.strftime("%H:%M:%S", time.localtime())
+    return f"Поточний час: {curr_time}"
